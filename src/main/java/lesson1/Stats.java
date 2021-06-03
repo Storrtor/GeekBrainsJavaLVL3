@@ -1,6 +1,7 @@
 package lesson1;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -30,7 +31,14 @@ public class Stats<T extends Number & Serializable> { //может быть не
         return Arrays.asList(numbers);
     }
 
-//    public static T getSomething(){     стат методы нельзя
+    @Override
+    public String toString() {
+        return "Stats{" +
+                "numbers=" + Arrays.toString(numbers) +
+                '}';
+    }
+
+    //    public static T getSomething(){     стат методы нельзя
 //        return new T();                 новый Т нельзя делать, кто знает что внутри
 //    }
 }
