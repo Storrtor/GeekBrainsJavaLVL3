@@ -23,6 +23,7 @@ public class BufferedReadApp {
         ) {
             for (byte aByte : bytes) {
                 bufferedOutputStream.write(aByte);
+
             }
         } catch (IOException ex) {
             ex.printStackTrace();

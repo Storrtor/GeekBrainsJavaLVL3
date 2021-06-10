@@ -28,7 +28,7 @@ public class DataBaseApp {
         dataBaseApp.insertNewBikePS("model", "serial");
         dataBaseApp.searchForBike();
         System.out.println(dataBaseApp.searchForBike());
-        dataBaseApp.dropTable();
+//        dataBaseApp.dropTable();
     }
 
     public void createTable() throws SQLException {

@@ -10,6 +10,7 @@ public class DataStringApp2 {
 
         try (DataOutputStream dataOutputStream = new DataOutputStream(new FileOutputStream(file,true))) {
             dataOutputStream.writeUTF("writeUTF" + str + "kuku");
+
         } catch (IOException ex) {
             ex.printStackTrace();
         }
